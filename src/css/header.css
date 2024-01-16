@@ -1,0 +1,72 @@
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 5px 0px;
+}
+
+.cabecalho .logo{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.cabecalho .logo .imagem{
+    width: 100px;
+}
+
+.cabecalho .logo .titulo{
+    padding-left: 7px;
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    transition: 0.3s ease-in-out;
+}
+
+.cabecalho .logo .titulo:hover{
+    color: #F24B52;
+}
+
+.cabecalho .navegacao .menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.cabecalho .navegacao .menu .item{
+    margin: 10px;
+}
+
+.cabecalho .navegacao .menu .item a{
+    position: relative;
+    padding: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.cabecalho .navegacao .menu .item a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    bottom: 5px;
+    left: 10px;
+    background-color: #F24B52;
+    transition: 0.5s ease-in-out;
+}
+
+.cabecalho .navegacao .menu .item a:hover{
+    color: #F24B52;
+}
+
+.cabecalho .navegacao .menu .item a:hover::after {
+    width: 80%;
+}
+
+@media (max-width: 624px) {
+    .cabecalho{
+        justify-content: center;
+        margin: 10px 0;
+    }
+}

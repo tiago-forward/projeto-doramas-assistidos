@@ -1,0 +1,116 @@
+.conteudo-principal .paineis-doramas{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+    box-shadow: 0px 10px 17px -10px rgba(0,0,0,0.3);
+}
+
+.conteudo-principal .paineis-doramas .titulo{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: calc(1em + 1vw);/*faz com que o tamanho da font acompanhe o tamanho da tela*/
+}
+
+.conteudo-principal .paineis-doramas .imagem-dorama{
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: brightness(70%);
+}
+
+.conteudo-principal .paineis-doramas .imagem-dorama.dorama1{
+    background-image: url('../imagens/pousando-no-amor.jpg');
+}
+
+.conteudo-principal .paineis-doramas .imagem-dorama.dorama2{
+    background-image: url('../imagens/a-boa-mãe-má.webp');
+}
+
+.conteudo-principal .paineis-doramas .imagem-dorama.dorama3{
+    background-image: url('../imagens/meu-demonio.jpg');
+}
+
+.conteudo-principal .paineis-doramas .imagem-dorama.dorama4{
+    background-image: url('../imagens/jogo-da-morte.webp');
+}
+
+.conteudo-principal .paineis-doramas .seta{
+    position: absolute;
+    background: url('../imagens/seta.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    text-indent: 100%;/*o text-ident + overflow serve para esconder um elemento de texto*/
+    overflow: hidden;/*os textos são necessários para os leitores de tela*/
+}
+
+.conteudo-principal .paineis-doramas .seta.btn-voltar{
+    left: 20px;
+    transform: rotateY(180deg);
+}
+
+.conteudo-principal .paineis-doramas .seta.btn-avancar{
+    right: 20px;
+}
+
+.sobre-mim{
+    background-color: #9A6858;
+}
+
+.sobre-mim .conteudo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5% 10%;
+}
+
+.sobre-mim .conteudo .informacoes{
+    width: 50%;
+}
+
+.sobre-mim .conteudo .informacoes .titulo{
+    color: #161419;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.sobre-mim .conteudo .informacoes .texto{
+    color: #fff;
+}
+
+.sobre-mim .conteudo .imagem{
+    width: 30%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.3);
+}
+
+@media (max-width: 1024px){
+
+    .conteudo-principal .paineis-doramas{
+        height: 70vh;
+    }
+
+    .sobre-mim .conteudo{
+        flex-direction: column;
+    }
+
+    .sobre-mim .conteudo .informacoes{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 900px) {
+    .conteudo-principal .paineis-doramas{
+        height: 50vh;
+    }
+
+}
