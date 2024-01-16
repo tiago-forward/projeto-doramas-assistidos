@@ -62,16 +62,14 @@
 }
 
 @media (max-width: 1024px){
-    .rodape .navegacao{
-        justify-content: center;
-    }
 
     .rodape .navegacao .logo{
         margin-bottom: 20px;
     }
-}
 
-@media (max-width: 900px) {
-
-
+    .rodape .navegacao .logo,
+    .rodape .navegacao .lista-de-contatos{
+        width: 100%;
+        justify-content: center;
+    }
 }
