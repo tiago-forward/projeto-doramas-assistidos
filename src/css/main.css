@@ -22,6 +22,12 @@
     height: 100%;
     z-index: -1;
     filter: brightness(70%);
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.conteudo-principal .paineis-doramas .imagem-dorama.mostrar{
+    opacity: 1;
 }
 
 .conteudo-principal .paineis-doramas .imagem-dorama.dorama1{
@@ -29,14 +35,26 @@
 }
 
 .conteudo-principal .paineis-doramas .imagem-dorama.dorama2{
-    background-image: url('../imagens/a-boa-mãe-má.webp');
+    background-image: url('../imagens/alice-in-borderland.jpg');
 }
 
 .conteudo-principal .paineis-doramas .imagem-dorama.dorama3{
-    background-image: url('../imagens/meu-demonio.jpg');
+    background-image: url('../imagens/all-of-us-are-dead.jpg');
 }
 
 .conteudo-principal .paineis-doramas .imagem-dorama.dorama4{
+    background-image: url('../imagens/a-boa-mãe-má.webp');
+}
+
+.conteudo-principal .paineis-doramas .imagem-dorama.dorama5{
+    background-image: url('../imagens/18-outra-vez.jpg');
+}
+
+.conteudo-principal .paineis-doramas .imagem-dorama.dorama6{
+    background-image: url('../imagens/meu-demonio.jpg');
+}
+
+.conteudo-principal .paineis-doramas .imagem-dorama.dorama7{
     background-image: url('../imagens/jogo-da-morte.webp');
 }
 
@@ -58,6 +76,10 @@
 
 .conteudo-principal .paineis-doramas .seta.btn-avancar{
     right: 20px;
+}
+
+.conteudo-principal .paineis-doramas .seta.opacidade{
+    opacity: 0.4;
 }
 
 .sobre-mim{
